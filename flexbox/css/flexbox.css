@@ -1,0 +1,17 @@
+.flex-container{
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+.element-1{
+  order: 1;
+}
+.element-2{
+  order: 2;
+}
+.element-6{
+  order: -1;
+}
