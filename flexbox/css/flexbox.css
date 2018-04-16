@@ -1,17 +1,13 @@
 .flex-container{
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: flex; /* flex |inline-flex*/
+  flex-direction: row; /* row| row-reverse | column | column-reverse*/
+  flex-wrap: wrap; /*nowrap |wrap |wrap-reverse */
+  justify-content: flex-start; /* flex-start |flex-end | center | space-between| space-around */
 
 }
-.element-1{
-  order: 1;
-}
-.element-2{
-  order: 2;
-}
-.element-6{
-  order: -1;
+.flex-element{
+  order: 0; /* 0| -n | n */
+  flex-grow: 0;
+
 }
