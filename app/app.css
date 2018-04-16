@@ -1,6 +1,6 @@
 html{
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 7px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -22,18 +22,18 @@ a.button{
   border-radius: 4px;
 }
 .app-wrap{
-  max-width: 540px;
-  height: 90vh;
+  max-width: 440px;
+  height: 95vh;
   margin: 5vh auto 5vh auto;
-  border: 10px solid rgba(0, 0, 0, 0.8);
+  border: 7px solid rgba(0, 0, 0, 0.8);
   border-bottom-width: 70px;
   border-radius: 10px;
-  box-shadow: 0 0 50px rgba(0,0,0,0.3);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 .content{
-  padding: 20px;
+  padding: 15px;
   background: white;
-  box-shadow: inset 0 5px 0 rgba(0,0,0,0.1);
+  box-shadow: inset 0 3px 0 rgba(0,0,0,0.2);
   line-height: 1.6;
 }
 .content img {
@@ -72,5 +72,32 @@ a.button{
 .app-header{
   background: #00663d;
   color: rgba(0,0,0,0.5);
-  padding: 1rem;
+  padding: 0;
+}
+
+.app-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.app-wrap> * {
+  flex: 1 1 auto;
+}
+
+.app-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content{
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+
+.icon-bar{
+  display: flex;
+}
+.icon-bar a{
+  flex: 1;
 }
