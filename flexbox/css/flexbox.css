@@ -1,13 +1,32 @@
 .flex-container{
 
   display: flex; /* flex |inline-flex*/
-  flex-direction: row; /* row| row-reverse | column | column-reverse*/
+  flex-direction: column; /* row| row-reverse | column | column-reverse*/
   flex-wrap: wrap; /*nowrap |wrap |wrap-reverse */
   justify-content: flex-start; /* flex-start |flex-end | center | space-between| space-around */
 
 }
 .flex-element{
   order: 0; /* 0| -n | n */
-  flex-grow: 0;
+  flex:1 100px; /* 0| 1| auto (first numb - flex-grow, second - flex-shrink, third -flex-basis) */
+
+
+}
+.element-1 {
+
+}
+.element-2{
+
+}
+.element-3{
+
+}
+.element-4{
+
+}
+.element-5{
+
+}
+.element-6{
 
 }
