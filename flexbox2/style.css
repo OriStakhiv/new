@@ -49,6 +49,17 @@ a.fb{
   max-width: 80px;
   margin: 0 auto;
 }
+.stack, .grid{
+  text-decoration: none;
+  color: black;
+}
+.stack:hover, .grid:hover{
+  font-size: 12px;
+  padding: 5px;
+  color: lightgrey;
+  background: black;
+}
+
 #blocks{
   margin: 20px;
 }
