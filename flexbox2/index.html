@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Flexbox</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -17,11 +18,53 @@
           <ul class="social">
             <li> <a href="" class="fb">Facebook</a> </li>
             <li> <a href="" class="tw">Twitter</a> </li>
-            
+
           </ul>
       </nav>
+      <div style="margin:20px;">
+        <span>Layout: </span>
+        <a href="#" class="stack">Stack</a>
+        <a href="#" class="grid"> Grid</a>
+
+      </div>
+      <section id="blocks">
+        <article class="">
+            <h2>Bla bla bla</h2>
+            <p>Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla bla Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla bla</p>
+        </article>
+        <article class="">
+          <h2>Bla bla bla bla [2]</h2>
+          <p>bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
+        </article>
+        <article class="">
+          <h2>Bla bla bla bla [3]</h2>
+          <p>bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
+        </article>
+        <article class="">
+          <h2>Bla bla bla bla [4]</h2>
+          <p>bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
+        </article>
+        <article class="">
+          <h2>Bla bla bla bla [5]</h2>
+          <p>bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
+        </article>
+        <article class="">
+          <h2>Bla bla bla bla [6]</h2>
+          <p>bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
+        </article>
+      </section>
 
     </div>
+    <script>
+    $("a.stack").on("click", function() {
+      $("article").addClass("stack");
+
+    });
+    $("a.grid").on("click", function() {
+      $("article").removeClass("stack");
+
+    });
+    </script>
 
   </body>
 </html>
